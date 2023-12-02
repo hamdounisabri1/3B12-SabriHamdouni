@@ -4,7 +4,7 @@
   <title>Parcours académiques</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="bodyParcour">
 
 
 	<div class="splashscreen">
@@ -17,13 +17,15 @@
 
 	<div id="top" class="navigation">
 		<div class="navigation__wrapper wrapper--large">
-			<img src="img/logo.png" alt="" width="50">
+			<div class="logo-container">
+				<img id="logo" src="img/logo.png" alt="" width="50">
+			</div>
 			<nav class="navigation__container">
 				<ul class="navigation__list">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="parcours.html">Parcours académiques</a></li>
-					<li><a href="exp.html">Expériences</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a id="pages" href="index.html">Accueil</a></li>
+					<li><a id="pages" href="parcours.html">Parcours académiques</a></li>
+					<li><a id="pages" href="exp.html">Expériences</a></li>
+					<li><a id="pages" href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 			
@@ -37,21 +39,27 @@
 		<br><br><br><br>
 		<br><br><br><br>
 		<section class="etude">
-			<div >
+			
 				<H1 style="color: gray;">Parcours d'étude</H1>
 				
                
-                <img src="img/isimm.png" alt=""><br>
-                <p style="color: black;">Licence nationale en systeme embarqué</p>
-                <p style="color: black;">Institut Supérieur d'Informatique et de Mathématiques de Monastir</p><br><br>
-                 <img src="img/esprit.png" alt="">
-				 <p style="color: black;">cycle d'ingénieur en informatique</p>
-				 <p style="color: black;">École supérieure privée d'ingénierie et de technologie</p>      
-                      
-                    
-                
+                <img class="imgP" src="img/isimm.png" alt=""><br>
+				<div class="p_container">               
+					 <p class="text" style="color: black;">Licence nationale en systeme embarqué en
+						institut Supérieur d'Informatique et de Mathématiques de Monastir
+					</p>
+					
+				</div>
+
+                 <img class="imgP" src="img/esprit.png" alt="">
+				 <div class="p_container">
+					<p class="text" style="color: black;">cycle d'ingénieur en informatique en 
+						ecole supérieure privée d'ingénierie et de technologie</p>
+					
+				 </div>
+
+				
 			
-			</div>
 		</section>
 
 		

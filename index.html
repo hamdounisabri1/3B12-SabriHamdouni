@@ -21,13 +21,15 @@
 
 	<div id="top" class="navigation">
 		<div class="navigation__wrapper wrapper--large">
-			<img src="img/logo.png" alt="" width="50">
+			<div class="logo-container">
+				<img id="logo" src="img/logo.png" alt="" >
+			</div>
 			<nav class="navigation__container">
 				<ul class="navigation__list">
-					<li><a class="link" href="#Accueil" onclick="test()">Accueil</a></li>
-					<li><a class="link" href="parcours.html">Parcours académiques</a></li>
-					<li><a class="link" href="exp.html">Expériences</a></li>
-					<li><a class="link" href="contact.html">Contact</a></li>
+					<li><a id="pages" class="link" href="#Accueil" >Accueil</a></li>
+					<li><a id="pages" class="link" href="parcours.html">Parcours académiques</a></li>
+					<li><a id="pages" class="link" href="exp.html">Expériences</a></li>
+					<li><a id="pages" class="link" href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 			
@@ -52,21 +54,38 @@
 			<div class="about" style="text-align: center; margin-left: 150;">
 				<H1 style="color: gray;">ABOUT ME</H1>
 				<br>
-			  <p class="text"  >
-				    Originaire de Sidi Bouzid en Tunisie, 
-					je suis un étudiant né le 31 août 2001. 
-					Ma vie est une harmonie entre mes études,
-					ma passion pour le breakdance, le montage vidéo et le football.
-					Le breakdance me permet de m'exprimer physiquement et émotionnellement,
-					tandis que le montage vidéo est mon terrain créatif,
-					fusionnant images et sons pour raconter des histoires captivantes.
-					Le football, quant à lui, reste le battement de mon cœur,
-					que ce soit en soutenant mon équipe favorite ou en jouant sur le terrain.</p>
+				<div class="p_container">
+					<p class="text"  >
+						Originaire de Sidi Bouzid en Tunisie, 
+						je suis un étudiant né le 31 août 2001. 
+						Ma vie est une harmonie entre mes études,
+						ma passion pour le breakdance, le montage vidéo et le football.
+						Le breakdance me permet de m'exprimer physiquement et émotionnellement,
+						tandis que le montage vidéo est mon terrain créatif,
+						fusionnant images et sons pour raconter des histoires captivantes.
+						Le football, quant à lui, reste le battement de mon cœur,
+						que ce soit en soutenant mon équipe favorite ou en jouant sur le terrain.</p>
+				</div>
+
 			 
 				
 			</div>
 
-		
+			<section id="contact" class="contact">
+				<h2 class="contact__heading title">Contact Me</h2>
+				<div class="contact__wrapper wrapper--large">
+					<div class="contact__visual">
+						<img src="img/contact-visual.png" >
+					</div>
+					<!-- Simple form setup: formspree.io -->
+					<form class="contact__form">
+						<input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
+						<input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
+						<textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
+						<input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
+					</form>
+				</div>
+			</section>
 		
 
 	</main>
